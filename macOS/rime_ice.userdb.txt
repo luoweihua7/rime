@@ -1,0 +1,150 @@
+# Rime user dictionary
+#@/db_name	rime_ice
+#@/db_type	userdb
+#@/rime_version	1.8.5
+#@/tick	276
+#@/user_id	macOS
+an zhuang 	安装	c=2 d=1.956 t=276
+ban qian 	搬迁	c=1 d=0.634448 t=276
+bang ding 	绑定	c=1 d=0.869358 t=276
+bao kuo 	包括	c=1 d=1 t=157
+bei fen 	备份	c=3 d=2.13406 t=245
+ben 	本	c=1 d=1 t=171
+ben di 	本地	c=1 d=0.980199 t=276
+bing 	并	c=2 d=0.995012 t=276
+bu 	不	c=1 d=0.66365 t=276
+bu he li 	不合理	c=1 d=0.786628 t=276
+bu shi 	不是	c=1 d=0.755784 t=276
+bu shu 	部署	c=4 d=3.53231 t=226
+cai 	才	c=1 d=0.798516 t=276
+cang ku 	仓库	c=1 d=1 t=172
+cheng xu 	程序	c=1 d=1 t=251
+chong gou 	重构	c=1 d=0.806541 t=276
+chong xin 	重新	c=4 d=3.53231 t=225
+chu cuo 	出错	c=1 d=1 t=264
+da kai 	打开	c=2 d=1.49907 t=256
+da xiao xie 	大小写	c=1 d=0.628135 t=276
+dao 	到	c=6 d=3.79429 t=276
+dao zhi 	导致	c=1 d=1 t=265
+de 	的	c=8 d=3.6157 t=276
+deng 	等	c=1 d=1 t=175
+deng dai 	等待	c=1 d=1 t=196
+di fang 	地方	c=1 d=0.790571 t=276
+dian ji 	点击	c=4 d=3.30256 t=247
+fang zhi 	防止	c=1 d=1 t=261
+fu wu duan 	服务端	c=1 d=0.67032 t=276
+fu zhi 	复制	c=4 d=1.93565 t=276
+ge 	个	c=1 d=0.941765 t=276
+ge xing hua 	个性化	c=2 d=1.38658 t=276
+gei 	给	c=1 d=0.600496 t=276
+gong neng 	功能	c=1 d=1 t=241
+guo qu 	过去	c=1 d=0.65377 t=276
+he 	和	c=1 d=0.71177 t=276
+hen duo 	很多	c=1 d=0.778801 t=276
+hou 	后	c=2 d=1.19749 t=276
+hou mian 	后面	c=1 d=1 t=262
+hou xu 	后续	c=1 d=1 t=271
+hou xuan ci 	候选词	c=1 d=0.946485 t=276
+hua 	话	c=2 d=1.33133 t=276
+hui 	会	c=1 d=0.697676 t=276
+hui fu 	恢复	c=1 d=1 t=272
+huo zhe 	或者	c=2 d=1.85214 t=253
+ji chu 	基础	c=1 d=0.88692 t=276
+ji chu shang 	基础上	c=1 d=0.909373 t=276
+ji ke 	即可	c=2 d=1.71892 t=200
+ji lu 	记录	c=1 d=0.612626 t=276
+jia 	夹	c=1 d=1 t=131
+jia gou 	架构	c=1 d=0.810584 t=276
+jian dan dian 	简单点	c=1 d=0.701173 t=276
+jiang 	将	c=5 d=3.90832 t=211
+jiang hui 	将会	c=1 d=1 t=233
+jie guo 	结果	c=1 d=0.704688 t=276
+jin xing 	进行	c=1 d=1 t=243
+jiu 	就	c=1 d=0.737123 t=276
+jiu de 	旧的	c=1 d=0.715338 t=276
+jiu shi 	就是	c=2 d=1.29978 t=276
+jiu shi yi ge 	就是一个	c=1 d=0.860708 t=276
+kan 	看	c=1 d=0.606531 t=276
+kan qi lai 	看起来	c=1 d=0.856415 t=276
+ke neng 	可能	c=1 d=0.690734 t=276
+kuang jia 	框架	c=1 d=0.752014 t=276
+li jie 	理解	c=1 d=0.843665 t=276
+mei 	没	c=1 d=0.718924 t=276
+mou ge 	某个	c=1 d=1 t=223
+mu lu 	目录	c=11 d=7.78564 t=258
+ni 	你	c=1 d=0.603506 t=276
+nuo guo qu 	挪过去	c=1 d=0.640824 t=276
+pei zhi 	配置	c=22 d=13.7193 t=276
+pi fu 	皮肤	c=1 d=1 t=111
+pin yin 	拼音	c=1 d=1 t=152
+qi yong 	启用	c=1 d=0.666977 t=276
+qi zhong 	其中	c=1 d=1 t=212
+qian duan 	前端	c=1 d=0.680451 t=276
+qian yi 	迁移	c=1 d=0.729789 t=276
+qie huan 	切换	c=2 d=0.906101 t=276
+qu bie 	区别	c=1 d=0.726149 t=276
+quan 	全	c=1 d=0.740818 t=276
+quan bu 	全部	c=2 d=1.94176 t=159
+ran hou 	然后	c=2 d=0.932745 t=276
+ru 	如	c=3 d=1.9982 t=276
+shan chu 	删除	c=2 d=1.94176 t=148
+she ding 	设定	c=1 d=1 t=255
+she zhi 	设置	c=1 d=1 t=276
+shen me 	什么	c=2 d=1.35381 t=276
+sheng cheng 	生成	c=1 d=1 t=228
+sheng ji 	升级	c=1 d=0.748264 t=276
+shi 	是	c=5 d=3.73419 t=276
+shi xian 	实现	c=1 d=0.782705 t=276
+shi yong 	使用	c=5 d=2.49614 t=276
+shi yong le 	使用了	c=1 d=1 t=108
+shu ju 	数据	c=1 d=1 t=208
+shu ru 	输入	c=1 d=1 t=229
+shu ru fa 	输入法	c=12 d=6.85725 t=276
+shun bian 	顺便	c=1 d=0.822835 t=276
+sui ran 	虽然	c=1 d=1 t=268
+suo yi 	所以	c=1 d=0.794534 t=276
+suo you 	所有	c=1 d=1 t=155
+ti huan 	替换	c=1 d=1 t=139
+ti jiao 	提交	c=1 d=0.609571 t=276
+tian jia 	添加	c=2 d=1.3777 t=276
+tong bu 	同步	c=8 d=5.65191 t=276
+tu biao 	图标	c=1 d=1 t=249
+tuo pan 	托盘	c=1 d=1 t=248
+wan cheng 	完成	c=1 d=1 t=199
+wei 	为	c=4 d=2.06066 t=276
+wen jian 	文件	c=6 d=4.58648 t=232
+wen jian jia 	文件夹	c=2 d=1.625 t=252
+wen ti 	问题	c=1 d=1 t=267
+wo 	我	c=1 d=0.831104 t=276
+wu 	无	c=1 d=0.744532 t=276
+wu song 	雾凇	c=2 d=0.922004 t=276
+xia 	下	c=2 d=1.96079 t=153
+xia zai 	下载	c=5 d=2.94561 t=276
+xiang zhe 	想着	c=1 d=0.802519 t=276
+xiu gai 	修改	c=2 d=1.9802 t=213
+xuan ran 	渲染	c=1 d=0.67368 t=276
+xuan ze 	选择	c=3 d=2.54655 t=250
+yi ban 	一般	c=2 d=1.98511 t=126
+yi fen 	一份	c=2 d=1.52994 t=260
+yi xia 	一下	c=1 d=0.66034 t=276
+yi xie 	一些	c=3 d=1.77966 t=276
+yi yi 	意义	c=1 d=0.733447 t=276
+yin wei 	因为	c=1 d=0.771052 t=276
+ying gai 	应该	c=2 d=1.2043 t=276
+yong hu 	用户	c=2 d=1.79057 t=254
+yong yu 	用于	c=1 d=1 t=270
+you 	有	c=1 d=1 t=269
+you 	由	c=1 d=1 t=239
+yue di 	月底	c=1 d=0.621885 t=276
+zai 	在	c=1 d=0.904837 t=276
+zhe ge 	这个	c=1 d=0.594521 t=276
+zhe kuai 	这块	c=1 d=0.814647 t=276
+zhe yang 	这样	c=1 d=0.839457 t=276
+zhi qian 	之前	c=2 d=1.37242 t=276
+zhi shi 	只是	c=1 d=0.637628 t=276
+zhi you 	只有	c=1 d=0.677057 t=276
+zhong 	中	c=2 d=1.72253 t=238
+zhong dian 	重点	c=2 d=1.52295 t=276
+zhu ru 	诸如	c=1 d=1 t=174
+zi ding yi 	自定义	c=2 d=1.98511 t=169
+zu jian 	组建	c=1 d=0.647265 t=276
