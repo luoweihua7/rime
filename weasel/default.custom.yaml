@@ -1,0 +1,9 @@
+patch:
+  menu/page_size: 9
+
+  schema_list:
+    - schema: rime_ice
+
+  switcher/hotkeys:
+    - F4
+    - Control+Shift+grave

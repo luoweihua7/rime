@@ -3,7 +3,6 @@ patch:
 
   schema_list:
     - schema: rime_ice
-    - schema: double_pinyin_flypy
 
   switcher/hotkeys:
     - F4
