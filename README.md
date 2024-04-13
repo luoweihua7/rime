@@ -6,17 +6,77 @@
 
 ### 下载并安装Rime
 
+#### 手动下载安装
+
 下载并安装 [Rime](https://rime.im/download/) 输入法
 
-### 下载雾凇拼音
+#### 命令行安装
 
-下载 「[雾凇拼音](https://github.com/iDvel/rime-ice)」到本地
+##### macOS
 
-```sh
-git clone https://github.com/iDvel/rime-ice
+```shell
+brew install --cask squirrel
 ```
 
-### 使用配置
+##### Windows
+
+```powershell
+winget install weasel
+```
+
+##### Debian
+
+应该适配于 Debian 和 Ubuntu
+
+```shell
+apt install --install-recommends fcitx5 fcitx5-chinese-addons -y
+apt install fcitx5-rime -y
+```
+
+### 配置输入法
+
+注意：下载好后，务必**重新部署**一次
+
+#### macOS配置
+
+```sh
+# Backup original rime configuration
+mv ~/Library/Rime ~/Library/Rime-Original
+
+# Download rime-ice
+git clone https://github.com/iDvel/rime-ice --depth=1 ~/Library/Rime
+
+# Append custom configuration
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/default.custom.yaml -o ~/Library/Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/squirrel.custom.yaml -o ~/Library/Rime/squirrel.custom.yaml
+```
+
+下载好后，重新部署一次即可
+
+#### Windows配置
+
+```powershell
+move %APPDATA%\Rime %APPDATA%\Rime-Original
+git clone https://github.com/iDvel/rime-ice --depth=1 %APPDATA%\Rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o %APPDATA%\Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o %APPDATA%\Rime/weasel.custom.yaml
+```
+
+#### Debian配置
+
+```shell
+git clone https://github.com/iDvel/rime-ice --depth=1 ~/.local/share/fcitx5/rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
+```
+
+重新配置并重启输入法服务
+
+```shell
+rime_deployer --build ~/.local/share/fcitx5/rime
+fcitx5 -r -d
+```
+
+## 说明
 
 1. 备份 Rime 的输入法配置
 
