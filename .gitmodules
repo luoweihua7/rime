@@ -1,0 +1,4 @@
+[submodule "fcitx5/.local/share/fcitx5/themes"]
+	path = fcitx5/.local/share/fcitx5/themes
+	url = git@github.com:luoweihua7/rime.git
+	branch = fcitx5/themes
