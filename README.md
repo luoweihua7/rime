@@ -64,9 +64,21 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.cus
 
 #### Debian配置
 
+先切换到需要使用输入法的用户（一般都不是 root 用户）
+
+```shell
+su user
+```
+
+下载输入法配置和设置
+
 ```shell
 git clone https://github.com/iDvel/rime-ice --depth=1 ~/.local/share/fcitx5/rime
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
+
+mkdir -p ~/.config/fcitx5/conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
 ```
 
 重新配置并重启输入法服务
