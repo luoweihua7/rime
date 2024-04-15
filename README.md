@@ -44,7 +44,7 @@ apt install fcitx5-rime -y
 mv ~/Library/Rime ~/Library/Rime-Original
 
 # Download rime-ice
-git clone https://github.com/iDvel/rime-ice --depth=1 ~/Library/Rime
+git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 ~/Library/Rime
 
 # Append custom configuration
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/default.custom.yaml -o ~/Library/Rime/default.custom.yaml
@@ -57,26 +57,34 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/squirrel
 
 ```powershell
 move %APPDATA%\Rime %APPDATA%\Rime-Original
-git clone https://github.com/iDvel/rime-ice --depth=1 %APPDATA%\Rime
+git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 %APPDATA%\Rime
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o %APPDATA%\Rime/default.custom.yaml
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o %APPDATA%\Rime/weasel.custom.yaml
 ```
 
 #### Debian配置
 
-先切换到需要使用输入法的用户（一般都不是 root 用户）
+**先切换到需要使用输入法的用户**（一般都不是 root 用户）
 
 ```shell
-su user
+su <username>
 ```
 
 下载输入法配置和设置
 
 ```shell
-git clone https://github.com/iDvel/rime-ice --depth=1 ~/.local/share/fcitx5/rime
+# 输入法配置
+mkdir -p ~/.local/share/fcitx5
+git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 ~/.local/share/fcitx5/rime
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
 
+# 输入法皮肤
+git clone git@github.com:luoweihua7/rime.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
+
+# 输入法设置
 mkdir -p ~/.config/fcitx5/conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/profile -o ~/.config/fcitx5/profile
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/config -o ~/.config/fcitx5/config
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
 ```
@@ -86,6 +94,20 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.
 ```shell
 rime_deployer --build ~/.local/share/fcitx5/rime
 fcitx5 -r -d
+```
+
+## 开发
+
+下载仓库
+
+```shell
+git clone --recurse-submodules git@github.com:luoweihua7/rime.git
+```
+
+拉取线上新代码
+
+```shell
+git pull --recurse-submodules
 ```
 
 ## 说明
