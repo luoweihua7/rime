@@ -4,13 +4,13 @@
 
 ## 使用
 
-### 下载并安装Rime
+### 下载并安装 Rime
 
 #### 手动下载安装
 
 下载并安装 [Rime](https://rime.im/download/) 输入法
 
-#### 命令行安装
+#### 通过命令行安装
 
 ##### macOS
 
@@ -37,7 +37,7 @@ apt install fcitx5-rime -y
 
 注意：下载好后，务必**重新部署**一次
 
-#### macOS配置
+#### macOS 配置
 
 ```sh
 # Backup original rime configuration
@@ -53,16 +53,30 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/squirrel
 
 下载好后，重新部署一次即可
 
-#### Windows配置
+#### Windows 配置
 
-```powershell
+##### 使用 CMD
+
+```cmd
 move %APPDATA%\Rime %APPDATA%\Rime-Original
 git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 %APPDATA%\Rime
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o %APPDATA%\Rime/default.custom.yaml
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o %APPDATA%\Rime/weasel.custom.yaml
 ```
 
-#### Debian配置
+##### 使用 PowerShell
+
+> 测试 **PowerShell 7.4.5** 通过，更早版本若不可用，可使用上面CMD的脚本
+
+```powershell
+$APPDATA = $env:APPDATA
+move $APPDATA\Rime $APPDATA\Rime-Original
+git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 $APPDATA\Rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o $APPDATA\Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o $APPDATA\Rime/weasel.custom.yaml
+```
+
+#### Debian 配置
 
 **先切换到需要使用输入法的用户**（一般都不是 root 用户）
 
@@ -96,7 +110,7 @@ rime_deployer --build ~/.local/share/fcitx5/rime
 fcitx5 -r -d
 ```
 
-## 开发
+## 个性化配置
 
 下载仓库
 
@@ -116,7 +130,7 @@ git pull --recurse-submodules
 
     点击 Rime 托盘图标，选择 **程序文件夹**（Windows）或者 **用户设定**（macOS）打开配置目录。
 
-    > Windows 目录一般为：`%APPDATA%\Rime` <br>
+    > Windows 目录一般为：`%APPDATA%\Rime` （若使用PowerShell时，目录为 `$env:APPDATA\Rime`） <br>
     > macOS 目录一般为：`~/Library/Rime`
 
     将配置文件夹备份一份即可，用于后续恢复。
