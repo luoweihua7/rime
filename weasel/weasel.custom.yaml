@@ -1,54 +1,98 @@
-patch: 
+patch:
   style/+:
-    color_scheme: personal_light                # 亮色主题皮肤
-    color_scheme_dark: personal_dark            # 暗色主题皮肤
-    horizontal: true                            # true横排，false竖排
-    inline_preedit: false                       # 拼音位于： 候选框 false | 行内 true
+    color_scheme: wechat_light
+    color_scheme_dark: wechat_dark
+    horizontal: true
+    inline_preedit: false
 
-  # 皮肤主题
   preset_color_schemes/+:
+    wechat_light:
+      name: 微信键盘浅色
+      back_color: 0xFFFFFF
+      border_height: 0
+      border_width: 8
+      candidate_format: "%c %@ "
+      comment_text_color: 0x999999
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0x75B100
+      hilited_candidate_text_color: 0xFFFFFF
+      horizontal: true
+      inline_preedit: true
+      label_font_point: 12
+      text_color: 0x424242
+      text_orientation: horizontal
+      candidate_list_layout: linear
+      candidate_text_color: 0x060606
+      comment_font_point: 13
+      hilited_comment_text_color: 0xEBEBEB
+      hilited_candidate_label_color: 0xE1C8AB
+
+    wechat_dark:
+      name: 微信键盘深色
+      back_color: 0x353535
+      border_color: 0x353535
+      border_height: 0
+      border_width: 8
+      candidate_format: "%c %@ "
+      comment_text_color: 0xAEAEAE
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0x75B100
+      hilited_candidate_text_color: 0xFFFFFF
+      horizontal: true
+      inline_preedit: true
+      label_font_point: 12
+      label_color: 0x777777
+      text_color: 0xBBBBBB
+      text_orientation: horizontal
+
     personal_light:
       name: 浅色自用
-      horizontal: true                          # true横排，false竖排
-      text_orientation: horizontal              # horizontal横排，vertical竖排
-      back_color: 0xFFFFFF                      # 候选条背景色
-      border_height: 0                          # 窗口上下高度，大于圆角半径才生效
-      border_width: 8                           # 窗口左右宽度，大于圆角半径才生效
-      candidate_format: "%c %@ "                # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      candidate_list_layout: linear             # 候选字列表排列方向
-      candidate_text_color: 0x060606            # 候选字文字颜色（非选中状态）
-      comment_font_point: 13                    # 候选字的备注说明文案字体
-      comment_text_color: 0x999999              # 拼音等提示文字颜色
-      corner_radius: 5                          # 窗口圆角
-      hilited_corner_radius: 5                  # 高亮圆角
-      font_face: PingFangSC                     # 候选词字体
-      font_point: 16                            # 候选字大小
-      hilited_candidate_back_color: 0xD2862E    # 第一候选项背景色
-      hilited_candidate_text_color: 0xE9E9E9    # 第一候选项文字颜色
-      hilited_comment_text_color: 0xEBEBEB      # 候选字选中时的颜色
-      hilited_candidate_label_color: 0xE1C8AB   # 后选择选中时的编号的颜色
-      label_color: 0x595959                     # 候选编号字体颜色
-      label_font_point: 12                      # 候选编号大小
-      text_color: 0x5E5E5E                      # 拼音行文字颜色(按左键后，拼音光标右侧的字体颜色)
-      hilited_text_color: 0xD2862E              # 拼音颜色
-      inline_preedit: false                     # 拼音位于： 候选框 false | 行内 true
+      horizontal: true
+      text_orientation: horizontal
+      back_color: 0xFFFFFF
+      border_height: 0
+      border_width: 8
+      candidate_format: "%c %@ "
+      candidate_list_layout: linear
+      candidate_text_color: 0x060606
+      comment_font_point: 13
+      comment_text_color: 0x999999
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0xD2862E
+      hilited_candidate_text_color: 0xE9E9E9
+      hilited_comment_text_color: 0xEBEBEB
+      hilited_candidate_label_color: 0xE1C8AB
+      label_color: 0x595959
+      label_font_point: 12
+      text_color: 0x5E5E5E
+      hilited_text_color: 0xD2862E
+      inline_preedit: false
 
     personal_dark:
       name: 深色自用
-      horizontal: true                          # true横排，false竖排
-      back_color: 0x545454                      # 候选条背景色
-      border_height: 0                          # 窗口上下高度，大于圆角半径才生效
-      border_width: 8                           # 窗口左右宽度，大于圆角半径才生效
-      candidate_format: "%c %@ "                # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      comment_text_color: 0x999999              # 拼音等提示文字颜色
-      corner_radius: 5                          # 窗口圆角
-      hilited_corner_radius: 5                  # 高亮圆角
-      font_face: PingFangSC                     # 候选词字体
-      font_point: 16                            # 候选字大小
-      hilited_candidate_back_color: 0x060606    # 第一候选项背景色
-      hilited_candidate_text_color: 0xE9E9E9    # 第一候选项文字颜色
-      label_font_point: 12                      # 候选编号大小
-      text_color: 0x424242                      # 拼音行文字颜色
-      label_color: 0x999999                     # 预选栏编号颜色
-      candidate_text_color: 0xE9E9EA            # 预选项文字颜色
-      inline_preedit: false                     # 拼音位于： 候选框 false | 行内 true
+      horizontal: true
+      back_color: 0x545454
+      border_height: 0
+      border_width: 8
+      candidate_format: "%c %@ "
+      comment_text_color: 0x999999
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0x060606
+      hilited_candidate_text_color: 0xE9E9E9
+      label_font_point: 12
+      text_color: 0x424242
+      label_color: 0x999999
+      candidate_text_color: 0xE9E9EA
+      inline_preedit: false

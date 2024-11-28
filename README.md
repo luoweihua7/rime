@@ -1,6 +1,12 @@
 # Rime 输入法配置
 
-使用配置为 「[雾凇拼音](https://github.com/iDvel/rime-ice)」，在基础上添加了一些个性化的配置（如9个候选词）。使用了 [ssnhd](https://github.com/ssnhd/rime) 的皮肤配置进行修改
+使用配置使用「[白霜拼音](https://github.com/gaboolic/rime-frost)」或「[雾凇拼音](https://github.com/iDvel/rime-ice)」为基础
+
+添加了一些个性化的配置
+
+- 9个候选词
+- 2款皮肤
+- 横向候选词
 
 ## 使用
 
@@ -39,11 +45,29 @@ apt install fcitx5-rime -y
 
 #### macOS 配置
 
+以下配置使用其一即可
+
+##### 白霜拼音
+
 ```sh
 # Backup original rime configuration
 mv ~/Library/Rime ~/Library/Rime-Original
 
-# Download rime-ice
+# Use rime-frost
+git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 ~/Library/Rime
+
+# Append custom configuration
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/default.custom.yaml -o ~/Library/Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/squirrel.custom.yaml -o ~/Library/Rime/squirrel.custom.yaml
+```
+
+##### 雾凇拼音
+
+```sh
+# Backup original rime configuration
+mv ~/Library/Rime ~/Library/Rime-Original
+
+# Use rime-ice
 git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 ~/Library/Rime
 
 # Append custom configuration
@@ -57,6 +81,17 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/squirrel/squirrel
 
 ##### 使用 CMD
 
+白霜拼音
+
+```cmd
+move %APPDATA%\Rime %APPDATA%\Rime-Original
+git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 %APPDATA%\Rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o %APPDATA%\Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o %APPDATA%\Rime/weasel.custom.yaml
+```
+
+雾凇拼音
+
 ```cmd
 move %APPDATA%\Rime %APPDATA%\Rime-Original
 git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 %APPDATA%\Rime
@@ -67,6 +102,18 @@ curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.cus
 ##### 使用 PowerShell
 
 > 测试 **PowerShell 7.4.5** 通过，更早版本若不可用，可使用上面CMD的脚本
+
+白霜拼音
+
+```powershell
+$APPDATA = $env:APPDATA
+move $APPDATA\Rime $APPDATA\Rime-Original
+git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 $APPDATA\Rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/default.custom.yaml -o $APPDATA\Rime/default.custom.yaml
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/weasel/weasel.custom.yaml -o $APPDATA\Rime/weasel.custom.yaml
+```
+
+雾凇拼音
 
 ```powershell
 $APPDATA = $env:APPDATA
@@ -85,6 +132,27 @@ su <username>
 ```
 
 下载输入法配置和设置
+
+白霜拼音
+
+```shell
+# 输入法配置
+mkdir -p ~/.local/share/fcitx5
+git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 ~/.local/share/fcitx5/rime
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
+
+# 输入法皮肤
+git clone git@github.com:luoweihua7/rime.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
+
+# 输入法设置
+mkdir -p ~/.config/fcitx5/conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/profile -o ~/.config/fcitx5/profile
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/config -o ~/.config/fcitx5/config
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
+```
+
+雾凇拼音
 
 ```shell
 # 输入法配置
