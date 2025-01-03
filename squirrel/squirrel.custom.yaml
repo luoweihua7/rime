@@ -1,4 +1,7 @@
 patch:
+  app_options/+:
+    com.microsoft.VSCode:
+      ascii_mode: false
   style/+:
     color_scheme: wechat_light
     color_scheme_dark: wechat_dark
