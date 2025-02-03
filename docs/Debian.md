@@ -30,14 +30,14 @@ git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 ~/.lo
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
 
 # 输入法皮肤
-git clone git@github.com:luoweihua7/rime.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
+git clone https://github.com/gaboolic/rime-frost.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
 
 # 输入法设置
 mkdir -p ~/.config/fcitx5/conf
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/profile -o ~/.config/fcitx5/profile
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/config -o ~/.config/fcitx5/config
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/profile -o ~/.config/fcitx5/profile
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/config -o ~/.config/fcitx5/config
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
 ```
 
 雾凇拼音
@@ -53,10 +53,10 @@ git clone git@github.com:luoweihua7/rime.git -b fcitx5/themes --single-branch --
 
 # 输入法设置
 mkdir -p ~/.config/fcitx5/conf
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/profile -o ~/.config/fcitx5/profile
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/config -o ~/.config/fcitx5/config
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
-curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/profile -o ~/.config/fcitx5/profile
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/config -o ~/.config/fcitx5/config
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/conf/classicui.conf -o ~/.config/fcitx5/conf/classicui.conf
+curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/.config/fcitx5/conf/rime.conf -o ~/.config/fcitx5/conf/rime.conf
 ```
 
 ## 重新部署
