@@ -30,7 +30,7 @@ git clone https://github.com/gaboolic/rime-frost --single-branch --depth=1 ~/.lo
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
 
 # 输入法皮肤
-git clone https://github.com/gaboolic/rime-frost.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
+git clone https://github.com/luoweihua7/rime -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
 
 # 输入法设置
 mkdir -p ~/.config/fcitx5/conf
@@ -49,7 +49,7 @@ git clone https://github.com/iDvel/rime-ice --single-branch --depth=1 ~/.local/s
 curl -L https://raw.githubusercontent.com/luoweihua7/rime/main/fcitx5/default.custom.yaml -o ~/.local/share/fcitx5/rime/default.custom.yaml
 
 # 输入法皮肤
-git clone git@github.com:luoweihua7/rime.git -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
+git clone https://github.com/luoweihua7/rime -b fcitx5/themes --single-branch --depth=1 ~/.local/share/fcitx5/themes
 
 # 输入法设置
 mkdir -p ~/.config/fcitx5/conf
